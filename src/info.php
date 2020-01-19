@@ -1,4 +1,4 @@
 <?php
-    print "Hola";
-    infophp();
+    print "Hola1";
+    phpinfo();
 ?>
