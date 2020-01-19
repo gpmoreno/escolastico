@@ -1,0 +1,12 @@
+version: '2'
+services:
+ escolastico:
+  image: .
+ lb:
+   image: dockercloud/haproxy
+   links:
+    - escolastico
+   ports:
+    - '80:80'
+   volumes:
+    - /var/run/docker.sock:/var/run/docker.sock

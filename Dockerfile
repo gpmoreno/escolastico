@@ -1,3 +1,3 @@
-FROM romeoz/docker-apache-php:5.6
-COPY src  /var/www/app
+FROM php:7.0-apache
+COPY src  /var/www/html
 EXPOSE 80
